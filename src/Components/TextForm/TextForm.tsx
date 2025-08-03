@@ -19,6 +19,7 @@ export default function TextForm({heading = "Enter Text Here"}: {heading?: strin
                 <button className="btn btn-primary mb-2 mb-sm-0 me-sm-2" onClick={() => setText(textHandlers.handleUppercase(text))}>Convert to Uppercase</button>
                 <button className="btn btn-primary mb-2 mb-sm-0 me-sm-2" onClick={() => setText(textHandlers.handleLowercase(text))}>Convert to Lowercase</button>
                 <button className="btn btn-primary mb-2 mb-sm-0 me-sm-2" onClick={() => setText(textHandlers.handleTitleCase(text))}>Convert to Title Case</button>
+                <button className="btn btn-primary mb-2 mb-sm-0 me-sm-2" onClick={() => setText(textHandlers.handleExtraSpaces(text))}>Remove Extra Spaces</button>
                 <button className="btn btn-secondary" onClick={() => setText(textHandlers.handleClear())}>Clear</button>
             </div>
         </div>

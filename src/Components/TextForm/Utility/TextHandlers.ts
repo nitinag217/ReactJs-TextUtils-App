@@ -18,10 +18,15 @@ const handleChange = (event: any): string => {
     return event.target.value;
 }
 
+const handleExtraSpaces = (text: string): string => {
+    return text.split(/[ ]+/).join(' ').trim();
+}
+
 const TextHandlers = {
     handleUppercase,
     handleLowercase,
     handleTitleCase,
+    handleExtraSpaces,
     handleClear,
     handleChange
 };
